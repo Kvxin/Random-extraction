@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+body #app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body #app .box h1 {
+  text-align: center;
+  letter-spacing: 0.3em;
+  margin-bottom: 70px;
+}
+
+body #app .box .main {
+  width: 1200px;
+  height: 700px;
+  box-shadow: 9px 4px 80px -10px rgba(0, 0, 0, 0.1);
+}
+
+body #app .box .main .tab {
+  width: 100%;
+  height: 50px;
+}
+
+body #app .box .main .tab ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  background-color: antiquewhite;
+  height: 4em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+body #app .box .main .tab ul li {
+  display: flex;
+  width: 200px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: #eee solid 1px;
+}
+
+body #app .box .main .tab ul li:hover {
+  background-color: #fff;
+  border-bottom: #fff solid 1px;
+}
+
+body #app .box .main .tab ul .active {
+  background-color: #fff;
+  border-bottom: #fff solid 1px;
+}
+
+body #app .box .main .tab_box {
+  margin-top: 1.5em;
+  padding-left: 1em;
+  height: 650px;
+}
+
+body #app .box .main .tab_box .item {
+  display: none;
+  width: 100%;
+}
+
+body #app .box .main .tab_box .item .numbers ul {
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  transition: .5s;
+}
+
+body #app .box .main .tab_box .item .numbers ul li {
+  width: 130px;
+  height: 60px;
+  border: 1px solid #eee;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body #app .box .main .tab_box .item .numbers ul li:hover {
+  background-color: #eee;
+}
+
+body #app .box .main .tab_box .item .numbers ul .w {
+  background-color: red;
+}
+
+body #app .box .main .tab_box .show {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body #app .box .main .tab_box .show .buttons {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body #app .box .main .tab_box .show .buttons button {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 18px;
+  color: #fff;
+  background-color: #1e9fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body #app .box .main .tab_box .show .buttons button:nth-child(2) {
+  margin-left: 18px;
+}
+
+body #app .box .main .tab_box .show .buttons button:hover {
+  background-color: rgba(30, 159, 255, 0.7);
+}
+
+body #app .box .title {
+  padding-bottom: 10px;
+}
+
+body #app .box .title .times {
+  margin-left: 160px;
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+body #app .localhost {
+  position: absolute;
+  width: 300px;
+  height: 800px;
+  top: 53%;
+  left: 90%;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+body #app .localhost ul {
+  height: 750px;
+  list-style: none;
+  overflow: auto;
+  transition: .3s;
+}
+
+body #app .localhost ul li {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  margin-top: 4.5px;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 13px 10px 40px -13px rgba(0, 0, 0, 0.1);
+}
+
+body #app .localhost ul li:hover {
+  background-color: #eee;
+}
+
+body #app .localhost ul li .l_color {
+  background-color: aqua;
+  height: 100%;
+  width: 2%;
+}
+
+body #app .localhost ul li .l_data {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+body #app .localhost ul li .l_data .l_times {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+body #app .localhost ul li .l_data .l_times span {
+  margin-left: 5px;
+}
+
+body #app .localhost ul li .l_data .l_names {
+  margin-bottom: 15px;
+}
+
+body #app .localhost ul div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+body #app .localhost .l_tit {
+  user-select: none;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
